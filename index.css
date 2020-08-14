@@ -43,20 +43,61 @@
     
 }
 
-html {
-    font-family: 'Raleway-Medium';    
-     
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    font-family: 'Raleway-Medium';  
 }
 
-.s1 {
-    display: flex;
-    flex-direction: row;
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+
+
+.s1 h1 {
+    color: white;
+    font-family: 'Raleway-Light';
+    font-size: 3rem;
+    letter-spacing: 5px;    
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+h1 strong {
+    font-family: 'Raleway-Bold';
+    font-size: 2.7rem;
+}
+
+h3 {
+    font-family: 'Haroopath';
+}
+
+
+
+.s1 {        
+    display: flex;   
+    justify-content: center;
+    align-items: center;  
+    height: 900px;    
+       
+}
+
+.s1 > div {
+   
+    
 }
 
 .s1 .left {
-    background-color: darkorchid;
+        background-color: darkorchid;
+    
+   
+    
 }
 
 .s1 .right {
     background-color: pink;
+    
 }
