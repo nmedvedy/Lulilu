@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Haroopath';
+    src: url(assets/Fonts/Haroopath.otf);
+}
+
+@font-face {
+    font-family: 'Raleway-Bold'; 
+    src: url(assets/Fonts/Raleway-Bold.ttf); 
+    
+}
+
+@font-face {
+    font-family: 'Raleway-Light-Italic'; 
+     src: url(assets/Fonts/Raleway-Light-Italic.ttf);
+   
+}
+
+@font-face {
+    font-family: 'Raleway-Light'; 
+    src: url(assets/Fonts/Raleway-Light.ttf);
+    
+}
+@font-face {
+    font-family: 'Raleway-Medium'; 
+    src: url(assets/Fonts/Raleway-Medium.ttf)
+    
+}
+
+@font-face {
+    font-family: 'Raleway-Regular-Italic'; 
+    src: url(assets/Fonts/Raleway-Regular-Italic.ttf);
+ 
+}
+@font-face {
+    font-family: 'Raleway-Regular'; 
+    src: url(assets/Fonts/Raleway-Regular.ttf)
+
+}
+
+@font-face {
+    font-family: 'Raleway-SemiBold'; 
+    src: url(assets/Fonts/Raleway-SemiBold.ttf)
+    
+}
+
+html {
+    font-family: 'Raleway-Medium';    
+     
+}
+
+.s1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.s1 .left {
+    background-color: darkorchid;
+}
+
+.s1 .right {
+    background-color: pink;
+}
