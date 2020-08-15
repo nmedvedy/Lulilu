@@ -4,66 +4,94 @@
 }
 
 @font-face {
-    font-family: 'Raleway-Bold'; 
-    src: url(assets/fonts/Raleway-Bold.ttf); 
-    
+    font-family: 'Raleway-Bold';
+    src: url(assets/fonts/Raleway-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'Raleway-Light-Italic'; 
-     src: url(assets/fonts/Raleway-Light-Italic.ttf);
-   
+    font-family: 'Raleway-Light-Italic';
+    src: url(assets/fonts/Raleway-Light-Italic.ttf);
 }
 
 @font-face {
-    font-family: 'Raleway-Light'; 
+    font-family: 'Raleway-Light';
     src: url(assets/fonts/Raleway-Light.ttf);
-    
 }
 @font-face {
-    font-family: 'Raleway-Medium'; 
-    src: url(assets/fonts/Raleway-Medium.ttf)
-    
+    font-family: 'Raleway-Medium';
+    src: url(assets/fonts/Raleway-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'Raleway-Regular-Italic'; 
+    font-family: 'Raleway-Regular-Italic';
     src: url(assets/fonts/Raleway-Regular-Italic.ttf);
- 
 }
 @font-face {
-    font-family: 'Raleway-Regular'; 
-    src: url(assets/fonts/Raleway-Regular.ttf)
-
+    font-family: 'Raleway-Regular';
+    src: url(assets/fonts/Raleway-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Raleway-SemiBold'; 
-    src: url(assets/fonts/Raleway-SemiBold.ttf)
-    
+    font-family: 'Raleway-SemiBold';
+    src: url(assets/fonts/Raleway-SemiBold.ttf);
 }
 
 * {
     padding: 0;
     margin: 0;
-    font-size: 30px;
-    font-family: 'Raleway-Medium';  
+    font-size: 20px;
+    font-family: 'Raleway-Medium';
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 20px;
+    box-sizing: border-box;    
+}
+
+html, body, 
+section {
+    height: 100%;
 }
 
 
+h2 {
+    font-family: 'Raleway-Light';
+    font-size: 2.3rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: #FF7D96;
+    margin-bottom: 2.9rem;
+}
+
+h2 strong {
+    font-family: 'Raleway-Bold';
+    font-size: 2.1rem;
+    color: #FF7D96;
+    
+}
+
+p {
+    font-family: 'Raleway-Regular-Italic';
+    color: #FF7D96;
+}
+
+/* SECTION 1 */
+
+.logo {
+    align-self: flex-start;    
+}
+
+.logo img {
+    
+}
 
 .s1 h1 {
     color: white;
     font-family: 'Raleway-Light';
     font-size: 3rem;
-    letter-spacing: 5px;    
+    letter-spacing: 5px;
     line-height: 1.1;
     font-weight: 500;
+    z-index: 1;
 }
 
 h1 strong {
@@ -75,29 +103,160 @@ h3 {
     font-family: 'Haroopath';
 }
 
+.cursiveOp {
+    color: #ff7d96;
+    font-size: 1.5rem;
+    z-index: 0.5;
+}
 
-
-.s1 {        
-    display: flex;   
-    justify-content: center;
-    align-items: center;  
-    height: 900px;    
-       
+.s1 {
+    display: flex;
+    
 }
 
 .s1 > div {
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .s1 .left {
-        background-color: darkorchid;
-    
-   
-    
+    background-color: #ff5a89;
+    flex: 1 1 0;
 }
 
 .s1 .right {
-    background-color: pink;
+    background-color: #ff7d96;
+    flex: 1 1 0;
+}
+
+/* SECTION 2 */
+
+.slide1, .slide2, .slide3 {
+    display: flex;
+    border: 1px solid white;
+    height: 100%;
+}
+
+
+    /* SLIDE 1 */
+
+
+.s2 .slide1 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.s2 .slide1 .left {
+    background-color: #FF7D96;
+    flex: 1 1 0;
+}
+
+.s2 .slide1 .right {
+    flex: 1 1 0;
+
+}
+    /* SLIDE 2 */
+
+.s2 .slide2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.s2 .slide2 .left {
+    background-color: #FF7D96;
+    flex: 1 1 0;
+}
+
+.s2 .slide2 .right {
+    flex: 1 1 0;
+
+}
+
+    /* SLIDE 3 */
+
+.s2 .slide3 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.s2 .slide3 .left {
+    background-color: #FF7D96;
+    flex: 1 1 0;
+}
+
+.s2 .slide3 .right {
+    flex: 1 1 0;
+}
+
+/* SECTION 3 */
+
+.s3 {
+ background-color: #F2F2F2;
+}
+
+    /* SLIDE 1 */
+
+.s3 .slide1 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.s3 .slide1 .left {
+    flex: 1 1 0;
+}
+
+.s3 .slide1 .right {
+    flex: 1 1 0;
+}
+
+    /* SLIDE 2 */
+    
+ .s3 .slide2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.s3 .slide2 .left {
+    flex: 1 1 0;
+}
+
+.s3 .slide2 .right {
+    flex: 1 1 0;
+}
+
+    /* SLIDE 3 */
+
+.s3 .slide3 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    
+}
+
+.s3 .slide3 .left {
+    flex: 1 1 0;
+}
+
+.s3 .slide3 .right {
+    flex: 1 1 0;
 }
