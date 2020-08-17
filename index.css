@@ -44,74 +44,96 @@
 }
 
 html {
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
-
-html, body, 
-section {
-    height: 100%;
-}
-
 
 h2 {
-    font-family: 'Raleway-Light';
+    font-family: 'Raleway-Regular';
     font-size: 2.3rem;
     letter-spacing: 5px;
     font-weight: 500;
-    color: #FF7D96;
+    color: #ff7d96;
     margin-bottom: 2.9rem;
 }
 
 h2 strong {
     font-family: 'Raleway-Bold';
     font-size: 2.1rem;
-    color: #FF7D96;
-    
+    color: #ff7d96;
 }
 
 p {
     font-family: 'Raleway-Regular-Italic';
-    color: #FF7D96;
+    color: #ff7d96;
 }
 
 /* SECTION 1 */
 
 .logo {
-    align-self: flex-start;    
+    position: absolute;
+    top: 20px;
+    left: 30px;    
 }
 
-.logo img {
-    
+.s1 {
+    position: relative;
+    height: 800px;
+    display: flex;
+}
+
+.s1 .middle {
+    position: absolute;
+    left: calc(50% - 140px);
+    bottom: 0;
+    height: 90%;
+}
+
+.s1 .middle img {
+    height: 100%;
+} 
+
+@media only screen and (max-width: 768px) {
+    .s1 .middle img {
+    max-height: 70%;
+    max-width: 70%;
+    bottom: 0;
+
+     }
+
+    .s1 .suscribite {
+        display: none;
+    }
+
+    .media {
+        display: none;
+    }
 }
 
 .s1 h1 {
     color: white;
     font-family: 'Raleway-Light';
-    font-size: 3rem;
+    font-size: 2.3rem;
     letter-spacing: 5px;
     line-height: 1.1;
     font-weight: 500;
     z-index: 1;
+    position: relative;
 }
 
 h1 strong {
     font-family: 'Raleway-Bold';
-    font-size: 2.7rem;
-}
-
-h3 {
-    font-family: 'Haroopath';
+    font-size: 2rem;
 }
 
 .cursiveOp {
+    font-family: 'Haroopath';
     color: #ff7d96;
-    font-size: 1.5rem;
-    z-index: 0.5;
-}
-
-.s1 {
-    display: flex;
-    
+    font-size: 1.8rem;
+    z-index: -1;
+    position: absolute;
+    bottom: -20px;
+    left: -80px;
+   
 }
 
 .s1 > div {
@@ -119,7 +141,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .s1 .left {
@@ -132,68 +153,76 @@ h3 {
     flex: 1 1 0;
 }
 
+.s1 .media {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+}
+
+.s1 .suscribite {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    max-height: 
+}
+
+
 /* SECTION 2 */
 
-.slide1, .slide2, .slide3 {
+.slide1,
+.slide2,
+.slide3 {
     display: flex;
     border: 1px solid white;
     height: 100%;
 }
 
-
-    /* SLIDE 1 */
-
+/* SLIDE 1 */
 
 .s2 .slide1 > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .s2 .slide1 .left {
-    background-color: #FF7D96;
+    background-color: #ff7d96;
     flex: 1 1 0;
 }
 
 .s2 .slide1 .right {
     flex: 1 1 0;
-
 }
-    /* SLIDE 2 */
+/* SLIDE 2 */
 
 .s2 .slide2 > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .s2 .slide2 .left {
-    background-color: #FF7D96;
+    background-color: #ff7d96;
     flex: 1 1 0;
 }
 
 .s2 .slide2 .right {
     flex: 1 1 0;
-
 }
 
-    /* SLIDE 3 */
+/* SLIDE 3 */
 
 .s2 .slide3 > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .s2 .slide3 .left {
-    background-color: #FF7D96;
+    background-color: #ff7d96;
     flex: 1 1 0;
 }
 
@@ -204,17 +233,16 @@ h3 {
 /* SECTION 3 */
 
 .s3 {
- background-color: #F2F2F2;
+    background-color: #f2f2f2;
 }
 
-    /* SLIDE 1 */
+/* SLIDE 1 */
 
 .s3 .slide1 > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .s3 .slide1 .left {
@@ -225,14 +253,13 @@ h3 {
     flex: 1 1 0;
 }
 
-    /* SLIDE 2 */
-    
- .s3 .slide2 > div {
+/* SLIDE 2 */
+
+.s3 .slide2 > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 .s3 .slide2 .left {
@@ -243,14 +270,13 @@ h3 {
     flex: 1 1 0;
 }
 
-    /* SLIDE 3 */
+/* SLIDE 3 */
 
 .s3 .slide3 > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
-    
+    align-items: center;
 }
 
 .s3 .slide3 .left {
