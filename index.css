@@ -79,13 +79,14 @@ p {
 .logo {
     position: absolute;
     top: 20px;
-    left: 30px;    
+    left: 30px;
+    height: auto;    
 }
 
 .s1 {
     position: relative;
     height: 800px;
-    display: flex;
+    display: flex;    
 }
 
 .s1 .middle {
@@ -147,7 +148,7 @@ h1 strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .s1 .left {
@@ -176,13 +177,18 @@ h1 strong {
 
 
 /* SECTION 2 */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .owl-carousel {
+                 
+    }
+}
+
 
 .s2 .slide1, .slide2, .slide3  {    
-    display: flex;
-    flex-direction: row;    
-    position: relative;
-    height: 800px; 
-          
+    display: flex;    
+    flex-direction: row; 
+    flex-wrap: wrap;
+    height: 800px;           
 }
 
 /* SLIDE 1 */
@@ -197,18 +203,18 @@ h1 strong {
 
 .s2 .slide1 .left {
     background-color: #ff7d96;
-    flex: 1 1 0;    
+    flex: 1 1 50%;    
 }
 
 .s2 .slide1 .right {
     background-color: white;
-    flex: 1 1 0;
+    flex: 1 1 50%;
 }
 
 .s2 .slide1 .left img {    
-    max-width: 60%;
+    max-width: 70%;
     position: absolute; 
-    left: 2%;    
+    left: .1px;
 } 
 
 /* SLIDE 2 */
@@ -233,12 +239,19 @@ h1 strong {
 }
 
 .s2 .slide2 .left img {    
-  max-width: 60%;
+   max-width: 50%;
    position: absolute; 
-   left: 1%; 
+   left: 4%; 
 } 
 
 /* SLIDE 3 */
+
+    .s2 .slide3 {
+    display: flex;
+    flex-direction: row;    
+    height: auto;
+    }
+
 
 .slide3 > div {
     display: flex;
@@ -256,13 +269,17 @@ h1 strong {
 
 .s2 .slide3 .right {
     background-color: white;
-    flex: 1 1 0;    
+    flex: 1 1 0;
+    margin: auto;
 }
 
-.s2 .slide3 .left img {    
-  max-width: 60%;
-   position: absolute; 
-   left: 1%; 
+.outfits2  {      
+    position: relative;
+    margin-left: 20%;
+    height: 100%;
+    padding-bottom: 10%;
+    
+    
 } 
                         
 /* SECTION 3 */
@@ -366,40 +383,35 @@ h1 strong {
 
 /* SECTION 4 */
 
-.s4 .slide1 {    
+.s4  {    
     display: flex;
-    flex-direction: row;    
-    position: relative;
-    height: 800px; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    height: 800px;   
           
-}
+}   
 
 /* SLIDE 1 */
 
-.s4 .slide1 .left {
+.s4 .info {
     background-color: #ff7d96;
     flex: 1 1 0;
     display: flex;
-    align-items: center;        
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    height: 100%;
 }
 
-.s4 .slide1 .right {
+.s4 .last-slider {
     background-color: white;
-    flex: 1 1 0;
-}
-                            
-.insp {    
-    position: absolute;  
-    width: 50%;
-    height: 100%;    
-} 
-
-.points {    
-    position: absolute;  
-    left: 51%;
-    top: 4%;
-    z-index: 2;     
-} 
+    display: flex;
+    flex-direction: row;    
+    height: 800px;  
+    flex: 1 1 0;    
+    
+}                          
 
 .newsletter {
     background-color: #C5EFF7;
@@ -438,11 +450,11 @@ input[type=submit] {
     background-color: #ff5a89;
     color: white;
     font-family: 'Raleway-Bold';
-    width: 9%;
+    width: 35%;
     border-radius: 10px;
     align-self: center;
-    position: absolute;
-    bottom: 25%;
+    position: relative;  
+  
 }
 
 .sets {
@@ -472,16 +484,14 @@ h6 {
 }
      
 
-/* SLIDE 2, 3 & 4 */
-
-.s4 > .slide2, .slide3, .slide4 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.last-slider img {
     width: 100%;
-    height: 100%;
+    height: 800px;
+    z-index: -1;
 }
 
-.s4 .slide4 img {
-    z-index: -1;
+.owl-pagination {
+position: absolute;
+right: 0;
+top: -50px;
 }
