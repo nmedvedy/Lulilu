@@ -1,9 +1,8 @@
 $('.owl-carousel').owlCarousel({
   loop:false,
   margin:20,
-  nav:false,  
-  autoWidth:false,  
-  autoPlay: true,
+  nav:false,
+  autoplay: false,
   responsiveClass:true,
   
   responsive:{
@@ -22,5 +21,6 @@ $('.owl-carousel').owlCarousel({
 $('.last-slider.owl-carousel').css("min-width", "50%");
 $('.last-slider.owl-carousel').css("max-width", "100%");
 $('.s4').css("margin-top", "4%");
+
 
 
