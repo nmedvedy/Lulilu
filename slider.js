@@ -11,7 +11,7 @@ $('.owl-carousel').owlCarousel({
           items:1
       },
       600:{
-          items:2
+          items:1
       },
       1000:{
           items:1
@@ -19,6 +19,8 @@ $('.owl-carousel').owlCarousel({
   },  
 }) 
 
-$('.last-slider.owl-carousel').css("width", "50%");
+$('.last-slider.owl-carousel').css("min-width", "50%");
+$('.last-slider.owl-carousel').css("max-width", "100%");
 $('.s4').css("margin-top", "4%");
+
 
