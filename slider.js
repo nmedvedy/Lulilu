@@ -18,8 +18,8 @@ $('.owl-carousel').owlCarousel({
   },  
 }) 
 
-$('.last-slider.owl-carousel').css("min-width", "50%");
-$('.last-slider.owl-carousel').css("max-width", "100%");
+// $('.last-slider.owl-carousel').css("min-width", "50%");
+// $('.last-slider.owl-carousel').css("max-width", "100%");
 $('.s4').css("margin-top", "4%");
 
 
