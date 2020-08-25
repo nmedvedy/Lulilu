@@ -31,18 +31,8 @@
     cursor: default;
 }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 10px;
-}
-
-.s3.owl-theme .owl-nav.disabled + .owl-dots {
-    position: relative;
-    bottom: 350px;
-}
-
-@media only screen and (max-width: 768px) {
-    .s3.owl-theme .owl-nav.disabled + .owl-dots {
-    }
+.s3 .owl-theme .owl-nav.disabled + .owl-dots {
+    z-index: 1;
 }
 
 .owl-theme .owl-dots {
@@ -67,4 +57,12 @@
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #ff5a89;
+}
+
+@media only screen and (max-width: 768px) {
+    .s3 .owl-dots {
+        position: absolute;
+        bottom: 550px;
+        left: 33vw;
+    }
 }
