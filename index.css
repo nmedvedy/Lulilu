@@ -39,8 +39,8 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 20px;
     font-family: 'Raleway-Medium';
+    font-size: 20px;
 }
 
 html {
@@ -54,6 +54,7 @@ h2 {
     font-weight: 400;
     color: #ff7d96;
     margin-bottom: 2.9rem;
+    text-align: center;
 }
 
 h2 strong {
@@ -65,7 +66,17 @@ h2 strong {
 p {
     font-family: 'Raleway-Regular-Italic';
     color: #ff7d96;
-    font-size: 1rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        text-align: unset;
+    }
+
+    p {
+        text-align: unset;
+    }
 }
 
 .underline {
@@ -101,12 +112,13 @@ p {
 .s1 h1 {
     color: white;
     font-family: 'Raleway-Light';
-    font-size: 1.7rem;
+    font-size: 45px;
     letter-spacing: 5px;
     line-height: 1.1;
     font-weight: 500;
     z-index: 1;
     position: relative;
+    text-align: center;
 }
 
 .s1 .left,
@@ -170,17 +182,19 @@ p {
         position: absolute;
         top: 5%;
         right: 3%;
+        cursor: pointer;
     }
 
     .s1 h1 {
         font-size: 2.7rem;
+        text-align: left;
     }
 
     .s1 .suscribite {
         display: block;
         position: fixed;
         right: 0;
-        bottom: 0;
+        bottom: 300px;
         z-index: 2;
     }
 
@@ -285,15 +299,16 @@ p {
     .s2 .slide-a2 .left img,
     .s2 .slide-a3 .left img {
         position: relative;
-        left: 80px;
+        left: 65px;
     }
 
-    h2, h2 strong {
-        font-size: 2.2rem;
+    h2,
+    h2 strong {
+        font-size: calc(22px + 1vw);
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: calc(11px + 1vw);
     }
 }
 
@@ -385,10 +400,14 @@ p {
 }
 
 .s4 .last-slider {
-    max-height: 100%;
     width: 100%;
     background-color: white;
-    z-index: 1;    
+    z-index: 1;
+}
+
+.s4 .last-slider img {
+    height: 70vh;
+    object-fit: cover;
 }
 
 .newsletter {
@@ -403,6 +422,8 @@ p {
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    -ms-flex-pack: center;
 }
 
 /* FORM */
@@ -412,6 +433,8 @@ form {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    align-items: center;
+    -ms-flex-align: center;
     width: 70%;
 }
 
@@ -423,34 +446,33 @@ input {
     font-family: 'Raleway-Regular';
     letter-spacing: 0.1rem;
     color: #ff7d96;
+    width: 280px;
 }
 
 :-ms-input-placeholder {
     color: #ff7d96;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     letter-spacing: 0;
+    text-align: center;
 }
 
 ::placeholder {
     color: #ff7d96;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     letter-spacing: 0;
+    text-align: center;
 }
 
 input[type='submit'] {
     background-color: #ff5a89;
     color: white;
     font-family: 'Raleway-Bold';
-    width: 30%;
-    height: 15%;
+    width: 100px;
+    height: 35px;
     border-radius: 8px;
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-    font-size: 3vw;
-    letter-spacing: 0;
-    text-align: center;
-    margin: auto;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    cursor: pointer;
 }
 
 input[type='number']::-webkit-inner-spin-button,
@@ -466,6 +488,10 @@ input[type='number'] {
 .sets {
     -ms-flex: 1 1 30%;
     flex: 1 1 30%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 h5 {
@@ -493,14 +519,13 @@ h6 {
     text-align: center;
 }
 
-
-
 @media only screen and (min-width: 768px) {
     .s4 .info {
         width: 50%;
     }
     .s4 .last-slider {
         max-width: 50%;
+        height: 100%;
     }
 
     .s4 .last-slider img {
@@ -529,19 +554,15 @@ h6 {
     }
     :-ms-input-placeholder {
         color: #ff7d96;
-        font-size: 0.8rem;
     }
 
     ::placeholder {
         color: #ff7d96;
-        font-size: 0.8rem;
     }
 
     input[type='submit'] {
         border-radius: 10px;
-        width: 40%;
-        font-size: 1vw;
-        margin-top: 4vw;
+        font-size: 12px;
     }
 }
 
