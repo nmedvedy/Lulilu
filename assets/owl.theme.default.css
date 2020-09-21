@@ -71,7 +71,7 @@
 @media only screen and (max-width: 768px) {
     .s3 .owl-dots {
         position: absolute;
-        bottom: 550px;
+        bottom: 120vh;
         left: 33vw;
     }
 }
@@ -91,7 +91,6 @@
 
 .s4 .owl-dots {
     display: grid;
-    display: -ms-grid;
     position: absolute;
     right: 0;
     bottom: 0;
