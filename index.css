@@ -53,13 +53,13 @@ h2 {
     letter-spacing: 5px;
     font-weight: 400;
     color: #ff7d96;
-    margin-bottom: 2.9rem;
+    margin-bottom: 2.7rem;
     text-align: center;
 }
 
 h2 strong {
     font-family: 'Raleway-Bold';
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     color: #ff7d96;
 }
 
@@ -307,11 +307,11 @@ p {
 
     h2,
     h2 strong {
-        font-size: calc(22px + 1vw);
+        font-size: calc(18px + 1vw);
     }
 
     p {
-        font-size: calc(11px + 1vw);
+        font-size: calc(9px + 1vw);
     }
 }
 
@@ -436,6 +436,10 @@ p {
     text-align: center;
     justify-content: center;
     -ms-flex-pack: center;
+}
+
+a {
+    color: inherit;
 }
 
 /* FORM */
